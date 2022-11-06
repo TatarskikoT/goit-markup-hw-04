@@ -115,6 +115,23 @@ img {
 .specialities .subtitle {
   line-height: calc(16 / 14);
 }
+.header-contacts .link {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 /* ----------------hero--------------- */
 .hero {
@@ -168,8 +185,8 @@ img {
   text-align: center;
   color: var(--secondary-text-color);
 }
-.specialities .sectoin-title,
-.projects .sectoin-title {
+.specialities .section-title,
+.projects .section-title {
   position: absolute;
   left: -9999px;
   top: -9999px;
@@ -180,7 +197,20 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.icon-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 
+  background-color: var(--secondary-white-color);
+}
+.icon-area .icon {
+  width: 70px;
+  height: 70px;
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +256,9 @@ img {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.card.text {
+.card .text {
+  margin-bottom: 16px;
+
   font-size: 16px;
 }
 .team .card {
@@ -238,10 +270,54 @@ img {
 }
 .socials {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link + .social-link {
+  margin-left: 10px;
+}
+.social-button {
+  padding: 12px;
+  border: none;
+  background-color: inherit;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.social-button:hover,
+.social-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* ---------------------clients----------------------- */
 .client-selector {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client + .client {
+  margin-left: 30px;
+}
+.client-button {
+  color: #afb1b8;
+  padding: 16px 32px;
+  background-color: inherit;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-button:hover,
+.client-button:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client-logo {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 /* ---------------------projects--------------------- */
 .selector {
@@ -333,11 +409,31 @@ img {
 }
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 .footer-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+.footer-div + .footer-div {
+  margin-left: 70px;
 }
 .subtitle {
   color: var(--secondary-text-color);
+}
+.footer .social-button {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-button:hover,
+.footer .social-button:focus {
+  background-color: var(--accent-color);
 }
 .button {
   display: inline-block;
