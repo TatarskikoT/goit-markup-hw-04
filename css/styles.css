@@ -248,6 +248,9 @@ img {
   padding-bottom: 30px;
 }
 .team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: calc(19 / 16);
   background-color: var(--secondary-white-color);
