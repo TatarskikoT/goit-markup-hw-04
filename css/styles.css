@@ -401,6 +401,7 @@ img {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -419,11 +420,8 @@ img {
 .footer .link {
   font-style: normal;
 }
-.footer-list {
-  display: flex;
-  align-items: baseline;
-}
 .footer-title {
+  margin-top: 0px;
   margin-bottom: 20px;
 
   font-size: 14px;
